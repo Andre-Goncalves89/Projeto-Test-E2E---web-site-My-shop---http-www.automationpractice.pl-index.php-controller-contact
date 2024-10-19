@@ -2,10 +2,12 @@ import userData from '../fixtures/user-data.json'
 import SignIn from "../pages/signIn"
 import NewAccount from "../pages/newAccount"
 import Login from '../pages/login'
+const Chance = require('chance')
 
 const signIn = new SignIn()
 const newAccount = new NewAccount()
 const login = new Login()
+const chance = new Chance()
 
 describe('New Account', () => {
     it('Sucess Created', () => {
@@ -13,7 +15,7 @@ describe('New Account', () => {
       login.acessSignInPage()
       signIn.clickToNewAcc()
       newAccount.chooseMr()
-      newAccount.fillNameType('Andre', 'Araujo')
+      newAccount.fillNameType(chance.first(), chance.last())
       newAccount.fillPassword('teste123')
       newAccount.chooseDateOfBirth()
       newAccount.clickCheckNewsLetter()

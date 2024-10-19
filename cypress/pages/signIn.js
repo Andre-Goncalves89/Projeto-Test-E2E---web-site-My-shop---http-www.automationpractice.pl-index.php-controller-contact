@@ -1,4 +1,7 @@
 import userData from '../fixtures/user-data.json'
+const Chance = require('chance')
+
+const chance = new Chance()
 
 class SignIn {
     selectorList() {
@@ -13,7 +16,7 @@ class SignIn {
         return selectors
     }
     clickToNewAcc() {
-        cy.get(this.selectorList().preOrderEmail).type('teste424@gmail.com')
+        cy.get(this.selectorList().preOrderEmail).type(chance.email())
         cy.get(this.selectorList().submitCreateAccountButton).click()
     }
     clickToLogin() {
