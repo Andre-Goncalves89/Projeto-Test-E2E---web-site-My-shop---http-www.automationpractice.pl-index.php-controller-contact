@@ -35,9 +35,10 @@ Este projeto tem como objetivo automatizar testes end-to-end no site http://www.
 
 cypress: Contém os arquivos de configuração e testes do Cypress.
 
-pageObjects: Contém os objetos de página que representam as diferentes páginas do site.
+[fileName]page: Contém os objetos de página que representam as diferentes páginas do site.
 
-utils: Contém funções utilitárias, como geradores de dados aleatórios.
+Após baixar a biblioteca "chance", utilize o comando chance.commandName. Para mais informações de como utilizar a biblioteca acesse:
+https://chancejs.com/usage/node.html
 
 # Cenários de Teste
 ## Cadastro de Usuário
