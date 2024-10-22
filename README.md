@@ -18,6 +18,13 @@ Este projeto tem como objetivo automatizar testes end-to-end no site http://www.
   ```bash
    npm install
    ```
+   ```bash
+   npm install cypress --save-dev
+   ```
+   ```bash
+   npm install chance
+   ```
+   
   ## Executando os Testes
 1. Abra o terminal na raiz do projeto.
 2. Execute os testes:
