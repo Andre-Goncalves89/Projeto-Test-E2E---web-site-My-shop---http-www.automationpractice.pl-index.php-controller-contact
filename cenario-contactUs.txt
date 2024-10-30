@@ -1,0 +1,23 @@
+DOCUMENTAÇÃO DE CENÁRIOS E CASOS DE TESTES DO PROJETO - MY SHOP
+                __________________________________________________________________________
+
+
+		Teste de Funcionalidade: Enviando mensagem para staff via contact us
+
+    Cenário: Mensagem enviada com sucesso
+   ------------------------------------------------------------>
+    	Dado que eu esteja na página contact us
+    	Quando eu preencher todos os campos corretamente e clicar em "send"
+    	Então devo ver a mensagem "Mensagem enviada com sucesso"
+___________________________________________________________________________________________________
+  
+  Cenário: Mensagem enviada com e-mail inválido
+   ---------------------------------------------------------------------------->
+   	Dado que eu esteja na página contact us
+	Quando eu preencher o campo de e-mail com um valor inválido e clicar em "send"
+	Então devo ver uma mensagem de erro indicando o problema com o e-mail
+
+___________________________________________________________________________________________________
+
+
+

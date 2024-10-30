@@ -1,0 +1,35 @@
+DOCUMENTAÇÃO DE CENÁRIOS E CASOS DE TESTES DO PROJETO - MY SHOP
+                __________________________________________________________________________
+
+
+		Teste de Funcionalidade: Gerenciar endereços
+
+    Cenário: Criar um novo endereço com sucesso
+   ------------------------------------------------------------>
+    	Dado que eu esteja logado em minha conta
+    	Quando eu acessar a página de meus endereços
+    	E clicar em "Adicionar novo endereço"
+    	E preencher todos os campos com informações válidas
+    	E clicar em "Salvar"
+    	Então eu devo ver uma mensagem de sucesso indicando que o endereço foi salvo
+___________________________________________________________________________________________________
+  
+  Cenário: Tentar criar um novo endereço com informações inválidas
+   ---------------------------------------------------------------------------->
+   	Dado que eu esteja logado em minha conta
+    	Quando eu acessar a página de meus endereços
+    	E clicar em "Adicionar novo endereço"
+    	E preencher alguns campos com informações inválidas
+    	E clicar em "Salvar"
+    	Então eu devo ver uma mensagem de erro indicando que os campos estão inválidos
+
+___________________________________________________________________________________________________
+
+ Cenário: Excluir um endereço existente
+  --------------------------------------------------------------------------->
+  	Dado que eu tenha um endereço cadastrado
+    	Quando eu acessar a página de meus endereços
+    	E clicar no botão "Excluir" para o endereço desejado
+    	Então eu devo ver uma mensagem de confirmação
+    	E ao confirmar, o endereço deve ser removido da lista
+___________________________________________________________________________________________________

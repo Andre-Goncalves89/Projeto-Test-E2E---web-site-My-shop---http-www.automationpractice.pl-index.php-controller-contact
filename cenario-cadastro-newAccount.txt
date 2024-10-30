@@ -1,0 +1,32 @@
+DOCUMENTAÇÃO DE CENÁRIOS E CASOS DE TESTES DO PROJETO - MY SHOP
+                __________________________________________________________________________
+
+
+		Teste de Funcionalidade: Cadastro de novo usuário
+
+    Cenário: Usuário realiza cadastro com sucesso
+   ------------------------------------------------------------>
+    	Dado que eu esteja na página de login
+    	Quando eu inserir um endereço de email válido e clicar em "Create an account"
+    	E preencher todos os campos do formulário com informações válidas
+    	E clicar no botão "Submit"
+    	Então eu devo ver uma mensagem de sucesso
+___________________________________________________________________________________________________
+  
+  Cenário: Usuário tenta cadastrar com formulário em branco
+   ---------------------------------------------------------------------------->
+   	Dado que eu esteja na página de cadastro
+    	Quando eu clicar no botão "Submit"
+    	Então eu devo ver uma mensagem de erro indicando que todos os campos são obrigatórios
+
+___________________________________________________________________________________________________
+
+ Cenário: Usuário tenta cadastrar com informações inválidas
+  --------------------------------------------------------------------------->
+  	Dado que eu esteja na página de cadastro
+    	Quando eu preencher o formulário com um nome de usuário contendo caracteres especiais
+    	E clicar no botão "Submit"
+    	Então eu devo ver uma mensagem de erro indicando que o nome de usuário é inválido
+___________________________________________________________________________________________________
+
+
