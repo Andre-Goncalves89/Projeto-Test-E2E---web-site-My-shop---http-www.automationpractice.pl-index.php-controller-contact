@@ -27,7 +27,7 @@ Este projeto tem como objetivo automatizar testes end-to-end no site http://www.
    
   ## Executando os Testes
 1. Abra o terminal na raiz do projeto.
-2. Execute os testes:
+2. Execute os testes utilizando cypress:
    ```bash
    npx cypress open
 
@@ -39,29 +39,6 @@ cypress: Contém os arquivos de configuração e testes do Cypress.
 
 Após baixar a biblioteca "chance", utilize o comando chance.commandName. Para mais informações de como utilizar a biblioteca acesse:
 https://chancejs.com/usage/node.html
-
-# Cenários de Teste
-## Cadastro de Usuário
-
-Cadastro com sucesso: Verifica se um novo usuário pode ser cadastrado com sucesso.
-
-Cadastro com formulário em branco: Verifica se o sistema impede o cadastro sem preencher todos os campos.
-
-Cadastro com informações inválidas: Verifica se o sistema valida informações como nome, email e senha.
-
-## Login de Usuário
-
-Login válido: Verifica se um usuário pode fazer login com credenciais válidas.
-
-Login com credenciais inválidas: Verifica se o sistema impede o login com credenciais inválidas.
-
-## Gerenciamento de Endereços
-
-Criar novo endereço: Verifica se um novo endereço pode ser criado com sucesso.
-
-Criar endereço com informações inválidas: Verifica se o sistema impede a criação de endereços com informações inválidas.
-
-Excluir endereço: Verifica se um endereço existente pode ser excluído.
 
 ## Contribuições
 Contribuições são bem-vindas! Abra um pull request para propor melhorias.
