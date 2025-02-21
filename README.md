@@ -1,7 +1,7 @@
 # Projeto-Test-E2E---web-site-My-shop
 
 ## Descrição
-Este projeto tem como objetivo automatizar testes end-to-end no site http://www.automationpractice.pl/index.php, utilizando a biblioteca Cypress e a arquitetura Page Object Model. Foram implementados testes para as funcionalidades de cadastro de usuário, login e gerenciamento de endereços.
+Este projeto tem como objetivo automatizar testes end-to-end no site http://www.automationpractice.pl/index.php, utilizando a ferramenta de testes Cypress e arquitetura - Page Object Model. Foram implementados testes para as funcionalidades de cadastro de usuário, login e gerenciamento de endereços.
 
 ## Tecnologias Utilizadas
 * **Cypress:** Framework de testes end-to-end.
